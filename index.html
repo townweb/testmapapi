@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=17b5473d-0024-4341-aae3-ffa78d19fa4a&lang=ru_RU" type="text/javascript">
+    </script>
+</head>
+<body>
+<div id="mapYandex"></div>
+<div id="mapYandexData"></div>
+<div id="mapGoogle"></div>
+<div id="mapGoogleData"></div>
+<script src="index.js"></script>
+<script async
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA2wTHlt0fYOUvoRS7x9O6EuOJjkPkkwwo&callback=initMap&libraries=places">
+</script>
+<style>
+    #mapYandex,
+    #mapYandexData,
+    #mapGoogle,
+    #mapGoogleData{
+        width: 80%;
+        height: 50vh;
+        margin: 20px auto;
+        border-bottom: 2px solid #000;
+        padding: 20px;
+    }
+    #mapYandexData{
+        height: auto;
+        min-height: 50vh;
+    }
+</style>
+</body>
+</html>
